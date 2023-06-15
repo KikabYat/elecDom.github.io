@@ -1,0 +1,380 @@
+body{
+    height: 100vh;
+    margin: 0;
+    /* overflow: hidden; */
+    box-sizing: border-box;
+}
+
+
+.conteiner-grid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 300px 100px auto;
+}
+
+
+/* .conteiner-1{
+    background-color: red;
+} */
+
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    animation: bannerName 10s infinite alternate;
+    background-size:cover;
+    z-index: 1;
+}
+
+@keyframes bannerName{
+    0%, 20%{
+        background-image: url("/images/bannerPrincipal1.jpg");
+    }
+    25%, 45%{
+        background-image: url("/images/banner2.jpg");
+    }
+
+    50%, 70%{
+        background-image: url("/images/banner3.jpeg");
+    }
+
+    75%, 100%{
+        background-image: url("/images/banner4.jpg");
+    }
+}
+
+
+
+.conteiner-2{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    /* background-color: yellow; */
+    align-items: center;
+    justify-content: center;
+}
+
+.item1-conteiner2{
+    font-size: 45px;
+    font-weight: bold;
+    /* background-color: aqua; */
+}
+
+
+.conteiner-3{
+    /* background-color: orange; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,auto);
+    column-gap: 20px;
+    row-gap: 25px;
+}
+
+
+.productoVenta{
+   /*  background-color: green; */
+    display: grid;
+    grid-template-rows:350px 100px 70px;
+    justify-items: center;
+    border: 3px dotted black;
+}
+
+
+
+.productoVenta img{
+    height: 90%;
+    margin-top: 10px;
+}
+
+.productoVenta .descripcion-producto{
+    /* background-color: aqua; */
+    width: 80%;
+}
+
+.productoVenta button{
+    margin-top: 10px;
+    height: 35px;
+    width: 180px;
+    text-align: center;
+    /* background-color: skyblue; */
+    border-radius: 20px;
+    font-size: 18px;
+    color: white;
+}
+
+
+
+.tutorialTxt{
+    height: 350px;
+}
+
+
+.video{
+    grid-area:2/2/3/4;
+    /* background-color: pink; */
+    justify-self: center;
+}
+
+
+.flechasCarrusel{
+    display: none;
+}
+/* .loader{
+    position: absolute;
+    background-color: pink;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+} */
+
+
+
+/*Dispositivos grandes (computadoras portátiles/computadoras de escritorio, 992px y arriba*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .conteiner-grid{
+        grid-template-rows: 250px 100px auto;
+    }
+
+    .banner{
+        height: 250px;
+    }
+    
+    
+    .item1-conteiner2{
+        font-size: 40px;
+        /* background-color: aqua; */
+    }
+
+
+    .conteiner-3{
+        /* background-color: burlywood; */
+        column-gap: 15px;
+        row-gap: 20px;
+    }
+
+    .productoVenta{
+        grid-template-rows:330px 90px 60px;
+    }
+
+
+
+    .productoVenta img{
+        height: 85%;
+        margin-top: 7px;
+    }
+
+
+    .productoVenta .descripcion-producto{
+        width: 80%;
+    }
+
+
+    .productoVenta button{
+        margin-top: 20px;
+        height: 30px;
+        width: 180px;
+        font-size: 16px;
+        color: white;
+    }
+
+
+    .tutorialTxt{
+        height: 340px;
+    }
+    
+    
+    .video{
+        width: 630px;
+        height: 100%;
+    }
+}
+
+
+
+/*Dispositivos medios (tabletas de paisaje, 768px y arriba*/
+@media screen and (min-width:768px) and (max-width:992px) {
+
+    .conteiner-grid{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 250px auto auto;
+    }
+
+    .banner{
+        height: 250px;
+    }
+
+
+    /* .conteiner-1{
+        background-color: orange;
+    } */
+
+   /*  .conteiner-2{
+        background-color: aquamarine;
+    }
+ */
+    .item1-conteiner2{
+        font-size: 40px;
+        background-color: green;
+    }
+
+    .conteiner-3{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2,auto);
+        /* background-color: pink; */
+        column-gap: 20px;
+        row-gap: 10px;
+        justify-items: center;
+
+    }
+
+    .productoVenta{
+        /* background-color: blanchedalmond; */
+        width: 85%;
+        display: grid;
+        justify-items: center;
+        border: 3px dotted black;
+        grid-template-rows:310px 100px 80px;
+    }
+
+
+    .productoVenta img{
+        height: 85%;
+        margin-top: 7px;
+    }
+
+
+    .productoVenta .descripcion-producto{
+        margin-top: 0px;
+       /*  background-color: yellow; */
+        width: 80%;
+    }
+
+    .productoVenta button{
+        margin-top: 25px;
+        height: 50px;
+        width: 180px;
+        border-radius: 8px;
+        font-size: 16px;
+        color: white;
+    }
+
+    
+    .conteiner-3 .item3-conteiner3{
+        display: none;
+    }
+
+
+    .tutorialTxt{
+        display: none;
+        grid-area: 2/1;
+        height: 350px;
+    }
+
+
+    .video{
+        display: none;
+    }
+
+
+
+
+
+
+}
+
+
+
+/*Dispositivos pequeños (tabletas de retrato y teléfonos grandes, 600px y arriba)*/
+@media (max-width:768px) {
+
+    .conteiner-grid{
+        grid-template-rows: 200px auto;
+    }
+    .conteiner-1{
+       /*  background-color: rgb(13, 0, 255); */
+        height: 100%;
+    }
+    
+    .banner{
+        height: 100%;
+    }
+
+    .item1-conteiner2{
+        font-size: 35px;
+        color: orange;
+        letter-spacing: 7px;
+        /* background-color: rgb(179, 202, 207); */
+    }
+
+    .productoVenta .descripcion-producto{
+        display: block;
+    }
+
+    .productoVenta button{
+        margin-bottom: 0px;
+        height: 52px;
+        width: 100px;
+        border-radius: 20px;
+        font-size: 16px;
+        color: black
+    }
+
+
+    .productoVenta img{
+        margin-top: 25px;
+        width: 80%;
+        height: 80%;
+    }
+
+
+    .tutorialTxt{
+        display: none;
+    }
+    
+   
+    .contenedorCarrusel{
+        border: 4px solid rgb(131, 15, 15);
+        overflow: hidden;
+    }
+
+    .itemCarrusel {
+        border: 2px solid black;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .flechasCarrusel{
+        display: flex;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top:0;
+        align-items: center;
+        justify-content: space-between;
+        padding:30px;
+    }
+
+    #itemCarrusel1{
+       /*  background-color: red; */
+        position: absolute;
+    }
+    
+    #itemCarrusel2{
+        /* background-color: yellow; */
+        position: absolute;
+        
+    }
+    
+    #itemCarrusel3{
+        /* background-color: rgb(148, 46, 63); */
+        position: absolute;
+    }
+
+    .video{
+        display: none;
+    }
+
+}

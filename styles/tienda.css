@@ -1,0 +1,58 @@
+.contenedor-grid{
+    display: grid;
+    grid-template-rows: 300px 40px auto 100px;
+}
+
+
+.titulo-ofertas{
+display: flex;
+justify-content: center;
+}
+
+.btn-oferta{
+    background-color: orange;
+    width: 300px;
+    height: 30px;
+    margin:10px;
+    border: none;
+}
+
+.btn-oferta:hover{
+    color: white;
+    font-size: 18px;
+}
+
+
+.seccion-productos{
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    margin-top: 30px;
+}
+
+.producto{
+    display: flex;
+    flex-direction: column;   
+}
+
+.producto button{
+    width: 50px;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: wheat;
+}
+
+.producto .fa-solid{
+    font-size: 30px;
+    color: brown;
+}
+.producto img{
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.seccion-links{
+    background-color: red;
+}

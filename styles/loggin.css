@@ -1,0 +1,89 @@
+#formularioLoggin{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin: auto;
+    font-size: 25px;
+    background-color:azure;
+    padding: 40px;
+    margin-top: 80px;
+}
+#formularioLoggin p{
+    text-align: center;
+}
+
+#formularioLoggin .input-user{
+    font-size: 18px;
+}
+
+#formularioLoggin .btnFormulario{
+    width: 150px;
+    height: 40px;
+    margin: auto;
+    border-radius: 1%;
+    border: none;
+    background-color: darkgoldenrod;
+    font-size: 19px;
+    margin-top: 10px;
+}
+
+#formularioLoggin .btnFormulario:hover{
+    color: bisque;
+    font-size: 21px;
+}
+
+
+/*Dispositivos grandes (computadoras portátiles/computadoras de escritorio, 992px y arriba*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    #formularioLoggin{
+        width: 800px;
+        margin-top: 200px;
+    }
+
+    #formularioLoggin p{
+        font-size: 28px;
+        margin-top: 10px;
+    }
+
+    #formularioLoggin .btnFormulario{
+        width: 166px;
+        height: 50px;
+        font-size: 25px;
+        margin-top: 15px;
+    }
+}
+
+
+
+/*Dispositivos medios (tabletas de paisaje, 768px y arriba*/
+@media screen and (min-width:768px) and (max-width:992px) {
+    #formularioLoggin{
+        width: 600px;
+        font-size: 26px;
+        margin-top: 100px;
+    }
+
+
+}
+
+
+
+/*Dispositivos pequeños (tabletas de retrato y teléfonos grandes, 600px y arriba)*/
+@media (max-width:768px) {
+    #formularioLoggin{
+        width: 400px;
+        font-size: 28px;
+        margin-top: 80px;
+    }
+
+    #formularioLoggin p{
+        font-size: 20px;
+    }
+
+    #formularioLoggin .btnFormulario{
+        margin-top: 25px;
+    }
+
+    
+
+}

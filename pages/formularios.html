@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/banner.css">
+    <link rel="stylesheet" href="/styles/formularios.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <title>Formularios</title>
+</head>
+<body>
+    <header>
+        <nav class="navBar">
+            <img class="logotipo" src="/images/MiLogoWebPage.png" alt="logotipo de ElectDom">
+            
+            <section class="contenedorBotones">
+                <button class="btn btnCarrrito" type="button">Carrito de compras</button>
+                <button class="btn btnLogin" type="button" onclick="window.location.href='/pages/login.html'">Login</button>
+            </section>
+
+
+            <input type="checkbox" class="checkbox">
+            <i class="iconos fi fi-br-menu-burger"></i>
+            <i class="iconos fi fi-br-cross"></i>
+
+            <ul class="menu">
+                <li class="inicio"><a href="/index.html">Inicio</a></li>
+                <li class="producto"><a href="/pages/productos.html">Productos</a></li>
+                <li class="tienda"><a href="/pages/tienda.html">Tienda</a></li>
+                <li class="contacto"><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="seccion-banner"></div>
+
+    <div class="tituloFormulario">
+        <h1>Formulario</h1>
+    </div>
+    <form action="" id="formulario">
+        <label for="nombre">Nombre</label>
+        <input type="text" placeholder="Introduzca su nombre" name="nombre" required><br>
+        
+
+        <label for="apellido">Apellido</label>
+        <input type="text" placeholder="Introduzca su apellido" name="apellido" required><br>
+
+        <label for="direccion">Dirección</label>
+        <input type="addres" placeholder="Introduzca su dirección" name="direccion"><br>
+
+        <label for="pais">Pais</label>
+        <input type="country" placeholder="Introduzca su país" name="pais"><br>
+
+        <label for="nombreUsuario">Nombre de usuario</label>
+        <input type="text" placeholder="Introduzca su nombre de usuario" name="nombreUsuario" required><br>
+
+        <label for="correoElectronico">Correo Electrónico</label>
+        <input type="email" placeholder="Introduzca su correo electrónico" name="correoElectronico"><br>
+
+        <input type="submit" value="Registrar ahora" id="buttonForm">
+
+    </form>
+
+
+
+
+
+
+</body>
+</html>

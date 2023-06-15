@@ -1,0 +1,354 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navBar{
+    background-color: rgb(192, 255, 196);
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+
+
+.logotipo{
+    height: 100px;
+    width: 150px;
+    position: absolute;
+}
+
+.contenedorBotones{
+    height: 100px;
+    width: 350px;
+    float: right;
+}
+
+.btn{
+    color: white;
+    background-color: #f18809;
+    border: 1px #dd7d08 solid;
+    height: 45px;
+    width: 165px;
+    cursor: pointer;
+    float: left;
+    margin-left: 8px;
+    margin-top: 25px;
+}
+
+.btnCarrrito{
+    background-image: url("/images/carritoDeCompras.png");
+    background-repeat: no-repeat;
+    background-position: 2px;
+    margin-right: 0;
+}
+
+.btnLogin{
+    background-image: url("/images/loginI.png");
+    background-repeat: no-repeat;
+    background-position: 2px;
+    margin-right: 0;
+
+}
+
+.iconos, .checkbox{
+    font-size: 45px;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+}
+
+.iconos{
+    pointer-events: none;
+}
+.checkbox{
+    height: 45px;
+    width: 45px;
+    opacity: 0;
+}
+
+.fi-br-cross{
+    display: none;
+}
+
+.fi-br-menu-burger{
+    display: none;
+}
+
+
+
+
+
+.menu{
+    /* background-color:red; */
+    display: inline-block;
+    margin-left: 180px;
+    z-index: 8;
+}
+
+.menu .inicio{
+    list-style-image: url("/images/iconosMenu/windows.png");
+    
+}
+
+
+.menu .producto{
+    list-style-image: url("/images/iconosMenu/cubes.png");
+}
+
+
+.menu .tienda{
+    list-style-image: url("/images/iconosMenu/shopping-bag.png");
+}
+
+
+.menu .contacto{
+    list-style-image: url("/images/iconosMenu/contact.png");
+}
+
+.menu li{
+    list-style-type: none;
+    float: left;
+    margin-left: 65px;
+}
+
+
+.menu li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #f18809;
+    line-height: 100px;
+}
+
+
+/*Dispositivos grandes (computadoras portátiles/computadoras de escritorio, 992px y arriba*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .navBar{
+        background-color: pink;
+        height: 90px;
+        width: 100%;
+    }
+
+    .logotipo{
+        height: 90px;
+        width: 140px;
+    }
+
+    .contenedorBotones{
+        background-color: green;
+        height: 90px;
+        width: 270px;
+        margin-left:30px
+    }
+
+    .btnCarrrito{
+        width: 150px;
+        text-align: end;
+    }
+
+    .btnLogin{
+        width: 100px;
+        text-align: end;
+        letter-spacing: 4px;
+    }
+
+
+
+    .menu{
+        margin-left: 190px;
+    }
+
+    .menu li{
+        margin-left: 50px;
+    }
+
+    .menu li a{
+        font-size: 23px;
+        line-height: 90px;
+    }
+
+}
+
+
+
+/*Dispositivos medios (tabletas de paisaje, 768px y arriba*/
+@media screen and (min-width:768px) and (max-width:992px) {
+   
+    .navBar{
+        background-color: pink;
+        height: 70px;
+    }
+
+    .logotipo{
+        height:70px;
+        width: 115px;
+    }
+
+
+    .contenedorBotones{
+        background-color: green;
+        height: 70px;
+        width: 30%;
+        margin-left:0;
+        margin-right: 300px;
+    }
+
+    .btn{
+        margin-top: 10px;
+    }
+
+    .btnCarrrito{
+        width: 120px;
+        text-align: end;
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+
+    .btnLogin{
+        width: 90px;
+        text-align: end;
+        letter-spacing: 4px;
+    }
+
+    .menu{
+        /* background-color:red; */
+        position: absolute;
+        display: block;
+        width: 350px;
+        letter-spacing: 6px;
+        top: -400px;
+        right: 4px;
+    }
+    
+
+    .menu li{
+        float: none;
+        margin-left: 1px;
+        background-color: orange;
+    }
+
+    .menu li:hover{
+        background-color: pink;
+    }
+      
+   
+    .menu li a{
+        font-size: 26px;
+        color: #f18809;
+        margin-left: 10px;
+    }
+
+
+
+
+
+    .fi-br-menu-burger{
+        display: block;
+    }
+
+    .checkbox:checked ~ .fi-br-cross{
+        display: block;
+    }
+
+
+    .checkbox:checked ~ .fi-br-menu-burger{
+        display: none;
+    }
+
+
+    .checkbox:checked ~ .menu{
+        top: 72px;
+    }
+
+
+
+}
+
+
+
+/*Dispositivos pequeños (tabletas de retrato y teléfonos grandes, 600px y arriba)*/
+@media (max-width:768px) {
+   
+    .navBar{
+        background-color: pink;
+        height: 65px;
+    }
+
+
+    .logotipo{
+        height:65px;
+        width: 90px;
+    }
+
+
+    .contenedorBotones{
+        background-color: green;
+        height: 65px;
+        width: 206px;
+        margin-left:0;
+        margin-right: 60px;
+    }
+
+
+    .btn{
+        margin-top: 10px;
+    }
+
+
+
+    .btnCarrrito{
+        width: 100px;
+        font-size: 12px;
+        margin-left:4px;
+        text-align: end;
+    }
+
+    .btnLogin{
+        width: 90px;
+        text-align: end;
+        letter-spacing: 4px;
+    }
+
+
+    .menu{
+        /* background-color:red; */
+        position: absolute;
+        display: block;
+        width: 310px;
+        letter-spacing: 4px;
+        top: -400px;
+        right: 4px;
+    }
+
+
+
+    .menu li{
+        float: none;
+        margin-left: 1px;
+        background-color: orange;
+    }
+
+    .menu li:hover{
+        background-color: pink;
+    }
+
+
+    .fi-br-menu-burger{
+        display: block;
+    }
+
+    .checkbox:checked ~ .fi-br-cross{
+        display: block;
+    }
+
+
+    .checkbox:checked ~ .fi-br-menu-burger{
+        display: none;
+    }
+
+
+    .checkbox:checked ~ .menu{
+        top: 72px;
+    }
+}
