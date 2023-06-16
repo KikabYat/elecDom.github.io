@@ -58,7 +58,7 @@ function muestraProductosLiquidacion(){
     seccionProductos.innerHTML='';
     seccionProductos.innerHTML=`
 <div class="producto">
-<figure><img src="/images/250x300/240x300 otra.jpg" alt=""></figure>
+<figure><img src="../images/250x300/240x300 otra.jpg" alt=""></figure>
 <p class="descripcion-producto">Descripcion: Pala</p>
 <P class="precio-producto">Precio: Q25.00</p>
 <button><i class="fa-solid fa-cart-plus"></i></button>
