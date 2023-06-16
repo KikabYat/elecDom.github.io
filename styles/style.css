@@ -37,14 +37,14 @@
 }
 
 .btnCarrrito{
-    background-image: url("/images/carritoDeCompras.png");
+    background-image: url("../images/carritoDeCompras.png");
     background-repeat: no-repeat;
     background-position: 2px;
     margin-right: 0;
 }
 
 .btnLogin{
-    background-image: url("/images/loginI.png");
+    background-image: url("../images/loginI.png");
     background-repeat: no-repeat;
     background-position: 2px;
     margin-right: 0;
@@ -87,23 +87,23 @@
 }
 
 .menu .inicio{
-    list-style-image: url("/images/iconosMenu/windows.png");
+    list-style-image: url("../images/iconosMenu/windows.png");
     
 }
 
 
 .menu .producto{
-    list-style-image: url("/images/iconosMenu/cubes.png");
+    list-style-image: url("../images/iconosMenu/cubes.png");
 }
 
 
 .menu .tienda{
-    list-style-image: url("/images/iconosMenu/shopping-bag.png");
+    list-style-image: url("../images/iconosMenu/shopping-bag.png");
 }
 
 
 .menu .contacto{
-    list-style-image: url("/images/iconosMenu/contact.png");
+    list-style-image: url("../images/iconosMenu/contact.png");
 }
 
 .menu li{
